@@ -6,13 +6,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="form-reposotorios">
-        <input type="text" name="user">
-        <button type="submit">Buscar</button>
-    </form>
-
-    <ul id="list-repositorios"></ul>
-
-    <script src="./bundle.js"></script>
+    <main>
+        <h1>Consulta de Repositórios</h1>
+        <form id="form-reposotorios">
+            <fieldset id="username">
+                <legend>Informe seu username no GitHub</legend>
+                <p>
+                    <label for="user">Username</label>
+                    <input type="text" name="user" id="user" placeholder="Nome de usuario no GitHub">
+                </p>
+            </fieldset>
+            <button type="submit" id="btnBuscar">Buscar</button>
+        </form>
+    
+        <ul id="list-repositorios"></ul>
+    </main>
 </body>
+<script src="./bundle.js"></script>
 </html>
