@@ -1,6 +1,5 @@
 var array = [2, 1, 3, 5, 3, 2];
 
-// Passando uma cópia do array duplicados com o spread operator
 console.log(locateDuplicate(array));
 
 removeDuplicate(array);
@@ -11,6 +10,9 @@ function removeDuplicate(array) {
     var novoArray = [];
 
     for (let i = 0; i < array.length; i++) {
+        // - Se o indexOf não resultar em -1, quer dizer que o valor já existe no novo array.
+        // - Se isto ocorrer, o valor não deve ser inserido,
+        // pois este novo array não deve possuir valores duplicados.
         if(novoArray.indexOf(array[i]) == -1) {
             novoArray.push(array[i]);
         }
@@ -27,7 +29,7 @@ function locateDuplicate(array) {
     /*
      - A iteração ocorrerá sobre o array do final ao início.
      - Conforme forem sendo encontrados valores que sejam duplicados,
-     serão removidos de duplicadosCopia.
+     serão removidos de duplicados.
      - Os valores serão removidos até só restar um, 
      que será o duplicado de menor índice.
     */
