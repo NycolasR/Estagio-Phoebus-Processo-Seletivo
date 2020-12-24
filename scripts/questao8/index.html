@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecanismos de Pesquisa</title>
+</head>
+<body>
+    Na minha vida, usei os seguintes mecanismos de pesquisa da web:<br/>
+    <a href="//www.cade.com">cade</a><br/>
+    <a href="//www.altavista.com">AltaVista</a><br/>
+    <a href="//www.google.com">Google</a><br/>
+</body>
+<script>
+    registerLinks();
+
+    function registerLinks() {
+        var as = document.getElementsByTagName('a');
+
+        for (let i = 0; i < as.length; i++) {
+            as[i].onclick = function() {
+                alert(i);
+                return false;
+            }
+        }
+    }
+</script>
+</html>
