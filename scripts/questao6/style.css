@@ -1,0 +1,34 @@
+h1 {
+  font-size: 20pt;
+}
+
+.container-basico {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+header#cabecalho {
+  background-color: red;
+}
+
+div#conteudos-principais {
+  display: grid;
+  grid-template-rows: 470px;
+  /*As 4 primeiras colunas ficam para a section e a outra coluna, fica para o aside*/
+  grid-template-columns: 4fr 1fr;
+}
+
+section#conteudo-principal {
+  background-color: rgb(35, 53, 216);
+}
+
+aside#conteudo-lateral {
+  background-color: rgb(113, 226, 0);
+}
+
+footer#rodape {
+  background-color: purple;
+}
