@@ -1,4 +1,4 @@
-console.log(digitoVerificador("55555"));
+console.log(digitoVerificador("1111"));
 
 /**
 * @prop {string} clientId:
