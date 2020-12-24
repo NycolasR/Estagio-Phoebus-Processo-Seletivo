@@ -1,10 +1,10 @@
-const a = [17, 26, 30];
+const a = [100, 28, 30];
 var classificacaoMaria = a;
 
-const b = [17, 27, 30];
+const b = [99, 16, 30];
 var classificacaoJoao = b;
 
-try{
+try {
     let pontuacao = compareElements(classificacaoMaria, classificacaoJoao);
     console.log(pontuacao);
 } catch(err) {

@@ -1,10 +1,14 @@
-console.log(digitoVerificador("1111"));
+console.log(digitoVerificador("55555"));
 
 /**
 * @prop {string} clientId:
 * @return {number} The check digit.
 */
 function digitoVerificador(clientId) {
+    if(clientId.length == 1) {
+        return Number(clientId);
+    }
+
     // Enquanto a string do clientId não for igual a 1 (um dígito)
     while(clientId.length > 1) {
         // Digito de verificação deve ser reinicializado sempre que clientId tiver mais de um dígito
